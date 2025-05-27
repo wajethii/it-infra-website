@@ -84,99 +84,155 @@
   
 
 <!-- Hero Section -->
-<section id="hero" class="flex flex-col md:flex-row items-center justify-between px-6 md:px-20 py-20 gap-12">
-  <div class="md:w-1/2 text-center md:text-left">
-    <h2 class="font-heading text-4xl md:text-5xl font-bold mb-6 leading-tight">Reliable IT Infrastructure & Network Solutions</h2>
-    <p class="text-lg mb-8">Professional WiFi, CCTV, Access Control, and Structured Cabling solutions tailored for your needs.</p>
-    <a href="#contact" class="bg-blue-800 text-white px-6 py-3 rounded-full transition">Request Survey</a>
-  </div>
-  <div class="md:w-1/2 flex justify-center">
-    <img src="images/hero.jpg" alt="Network Solutions" class="rounded-full shadow-lg object-cover">
-  </div>
+<section id="hero" class="relative flex flex-col md:flex-row items-center justify-between px-6 md:px-20 py-20 gap-12 bg-gradient-to-r from-blue-500 to-indigo-600 text-white overflow-hidden">
+    <div class="absolute inset-0 opacity-10" style="background-image: url('images/hero-pattern.svg'); background-size: cover;"></div>
+
+    <div class="relative md:w-1/2 text-center md:text-left z-10">
+        <h1 class="font-heading text-4xl md:text-6xl font-bold mb-6 leading-tight">
+            Empowering Your Business with <br class="hidden sm:inline">Smart Tech & Digital Presence
+        </h1>
+        <p class="text-lg md:text-xl mb-8">
+            From **robust IT infrastructure** to **stunning web solutions**, Wiredwise provides secure, scalable technology designed for your growth in Kenya.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+            <a href="#services" class="bg-white text-blue-800 px-8 py-4 rounded-full font-semibold shadow-lg hover:bg-gray-100 transition duration-300 ease-in-out">Explore Our Services</a>
+            <a href="#contact" class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-blue-800 transition duration-300 ease-in-out">Get a Free Quote</a>
+        </div>
+    </div>
+    <div class="relative md:w-1/2 flex justify-center z-10">
+        <img src="images/hero.jpg" alt="Comprehensive IT and Web Solutions for Businesses" class="rounded-full shadow-2xl object-cover w-full max-w-md md:max-w-none">
+    </div>
 </section>
 
-<!-- Services Section -->
 <section id="services" class="animate-fade bg-gradient-to-b from-white via-slate-50 to-white py-24 sm:py-32">
-
     <div class="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
-      <h2 class="font-heading text-base font-semibold text-primary">Our Services</h2>
-      <p class="mx-auto mt-2 max-w-xl text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl">Expert IT & Network Solutions</p>
-      <div class="mt-10 grid gap-6 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">
-  
-        <!-- WiFi Installation -->
-        <div class="relative lg:row-span-2">
-          <div class="absolute inset-0 rounded-3xl bg-white shadow-sm ring-1 ring-gray-200"></div>
-          <div class="relative flex h-full flex-col overflow-hidden rounded-3xl p-8">
-            <h3 class="font-heading text-xl font-semibold text-blue-600 mb-4">WiFi Installation</h3>
-            <p class="text-gray-600 mb-6">Seamless business and home WiFi setups with optimal coverage and speeds.</p>
-            <div class="flex-1 flex items-center justify-center">
-              <img src="images/wifi.jpg" alt="WiFi Installation" class="rounded-2xl object-cover w-full h-full max-h-64">
+        <h2 class="font-heading text-base font-semibold text-primary">Our Services</h2>
+        <p class="mx-auto mt-2 max-w-xl text-4xl font-semibold tracking-tight text-balance text-gray-900 sm:text-5xl">Your Complete Tech Partner</p>
+
+        <h3 class="font-heading text-3xl font-semibold text-gray-900 mt-16 mb-8">Business IT Solutions</h3>
+        <div class="grid gap-6 sm:mt-8 lg:grid-cols-3 lg:grid-rows-2">
+
+            <div class="relative lg:row-span-2">
+                <div class="absolute inset-0 rounded-3xl bg-white shadow-sm ring-1 ring-gray-200"></div>
+                <div class="relative flex h-full flex-col overflow-hidden rounded-3xl p-8">
+                    <h4 class="font-heading text-xl font-semibold text-blue-600 mb-4">WiFi Installation</h4>
+                    <p class="text-gray-600 mb-6">Seamless business and home WiFi setups with optimal coverage and speeds.</p>
+                    <div class="flex-1 flex items-center justify-center">
+                        <img src="images/wifi.jpg" alt="WiFi Installation" class="rounded-2xl object-cover w-full h-full max-h-64">
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-  
-        <!-- CCTV Surveillance -->
-        <div class="relative">
-          <div class="absolute inset-0 rounded-3xl bg-white shadow-sm ring-1 ring-gray-200"></div>
-          <div class="relative flex flex-col overflow-hidden rounded-3xl p-8">
-            <h3 class="font-heading text-xl font-semibold text-blue-600 mb-4">CCTV Surveillance</h3>
-            <p class="text-gray-600 mb-6">Advanced CCTV installation for business and residential security.</p>
-            <div class="flex-1 flex items-center justify-center">
-              <img src="images/cctv.jpg" alt="CCTV Surveillance" class="rounded-2xl object-cover w-full h-40">
+
+            <div class="relative">
+                <div class="absolute inset-0 rounded-3xl bg-white shadow-sm ring-1 ring-gray-200"></div>
+                <div class="relative flex flex-col overflow-hidden rounded-3xl p-8">
+                    <h4 class="font-heading text-xl font-semibold text-blue-600 mb-4">CCTV Surveillance</h4>
+                    <p class="text-gray-600 mb-6">Advanced CCTV installation for business and residential security.</p>
+                    <div class="flex-1 flex items-center justify-center">
+                        <img src="images/cctv.jpg" alt="CCTV Surveillance" class="rounded-2xl object-cover w-full h-40">
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-  
-        <!-- Access Control -->
-        <div class="relative">
-          <div class="absolute inset-0 rounded-3xl bg-white shadow-sm ring-1 ring-gray-200"></div>
-          <div class="relative flex flex-col overflow-hidden rounded-3xl p-8">
-            <h3 class="font-heading text-xl font-semibold text-blue-600 mb-4">Access Control Systems</h3>
-            <p class="text-gray-600 mb-6">Smart, secure access management solutions for any facility size.</p>
-            <div class="flex-1 flex items-center justify-center">
-              <img src="images/accesscontrol.jpg" alt="Access Control" class="rounded-2xl object-cover w-full h-40">
+
+            <div class="relative">
+                <div class="absolute inset-0 rounded-3xl bg-white shadow-sm ring-1 ring-gray-200"></div>
+                <div class="relative flex flex-col overflow-hidden rounded-3xl p-8">
+                    <h4 class="font-heading text-xl font-semibold text-blue-600 mb-4">Access Control Systems</h4>
+                    <p class="text-gray-600 mb-6">Smart, secure access management solutions for any facility size.</p>
+                    <div class="flex-1 flex items-center justify-center">
+                        <img src="images/accesscontrol.jpg" alt="Access Control" class="rounded-2xl object-cover w-full h-40">
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-  
-        <!-- Structured Cabling -->
-        <div class="relative lg:row-span-2">
-          <div class="absolute inset-0 rounded-3xl bg-white shadow-sm ring-1 ring-gray-200"></div>
-          <div class="relative flex h-full flex-col overflow-hidden rounded-3xl p-8">
-            <h3 class="font-heading text-xl font-semibold text-blue-600 mb-4">Structured Cabling</h3>
-            <p class=" text-gray-600 mb-6">Efficient cabling solutions to power your business communications and networking.</p>
-            <div class="flex-1 flex items-center justify-center">
-              <img src="images/structuredcabling.jpg" alt="Structured Cabling" class="rounded-2xl object-cover w-full h-full max-h-64">
+
+            <div class="relative lg:row-span-2">
+                <div class="absolute inset-0 rounded-3xl bg-white shadow-sm ring-1 ring-gray-200"></div>
+                <div class="relative flex h-full flex-col overflow-hidden rounded-3xl p-8">
+                    <h4 class="font-heading text-xl font-semibold text-blue-600 mb-4">Structured Cabling</h4>
+                    <p class="text-gray-600 mb-6">Efficient cabling solutions to power your business communications and networking.</p>
+                    <div class="flex-1 flex items-center justify-center">
+                        <img src="images/structuredcabling.jpg" alt="Structured Cabling" class="rounded-2xl object-cover w-full h-full max-h-64">
+                    </div>
+                </div>
             </div>
-          </div>
+            
+            <div class="relative">
+                <div class="absolute inset-0 rounded-3xl bg-white shadow-sm ring-1 ring-gray-200"></div>
+                <div class="relative flex flex-col overflow-hidden rounded-3xl p-8">
+                    <h4 class="font-heading text-xl font-semibold text-blue-600 mb-4">Telephony Systems</h4>
+                    <p class="text-gray-600 mb-6">Modern VoIP, hosted PBX, and unified communications for clear, reliable calls.</p>
+                    <div class="flex-1 flex items-center justify-center">
+                        <img src="images/telephony.jpg" alt="Telephony Systems" class="rounded-2xl object-cover w-full h-40">
+                    </div>
+                </div>
+            </div>
+            
         </div>
-  
-      </div>
+
+        <h3 class="font-heading text-3xl font-semibold text-gray-900 mt-24 mb-8">Web Design & Development</h3>
+        <div class="grid gap-6 sm:mt-8 lg:grid-cols-3">
+
+            <div class="relative">
+                <div class="absolute inset-0 rounded-3xl bg-white shadow-sm ring-1 ring-gray-200"></div>
+                <div class="relative flex flex-col overflow-hidden rounded-3xl p-8">
+                    <h4 class="font-heading text-xl font-semibold text-blue-600 mb-4">Custom Website Design</h4>
+                    <p class="text-gray-600 mb-6">Stunning, responsive websites crafted to represent your brand and engage your audience.</p>
+                    <div class="flex-1 flex items-center justify-center">
+                        <img src="images/web-design.jpg" alt="Custom Website Design" class="rounded-2xl object-cover w-full h-40">
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative">
+                <div class="absolute inset-0 rounded-3xl bg-white shadow-sm ring-1 ring-gray-200"></div>
+                <div class="relative flex flex-col overflow-hidden rounded-3xl p-8">
+                    <h4 class="font-heading text-xl font-semibold text-blue-600 mb-4">E-commerce & Online Shops</h4>
+                    <p class="text-gray-600 mb-6">Launch your online store with secure payment gateways and robust product management.</p>
+                    <div class="flex-1 flex items-center justify-center">
+                        <img src="images/e-commerce.jpg" alt="E-commerce & Online Shops" class="rounded-2xl object-cover w-full h-40">
+                    </div>
+                </div>
+            </div>
+
+            <div class="relative">
+                <div class="absolute inset-0 rounded-3xl bg-white shadow-sm ring-1 ring-gray-200"></div>
+                <div class="relative flex flex-col overflow-hidden rounded-3xl p-8">
+                    <h4 class="font-heading text-xl font-semibold text-blue-600 mb-4">Website Maintenance & Support</h4>
+                    <p class="text-gray-600 mb-6">Keep your site secure, updated, and performing optimally with our reliable support plans.</p>
+                    <div class="flex-1 flex items-center justify-center">
+                        <img src="images/web-maintenance.jpg" alt="Website Maintenance & Support" class="rounded-2xl object-cover w-full h-40">
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </div>
-  </section>
+</section>
   
 
 <!-- About Section -->
 <section id="about">
     <div class="relative isolate overflow-hidden bg-slate-950 py-24 sm:py-32">
-        <img src="images/about.jpg" alt="" class="absolute inset-0 -z-10 size-full object-cover object-right md:object-center">
+        <img src="images/about.jpg" alt="Wiredwise team working on IT and web solutions" class="absolute inset-0 -z-10 size-full object-cover object-right md:object-center">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
-          <div class="mx-auto max-w-2xl lg:mx-0">
-            <h2 class="font-heading text-5xl font-semibold tracking-tight text-white sm:text-7xl">About Us</h2>
-            <p class="mt-8 text-lg font-medium text-pretty text-white sm:text-xl/8">WiredWise is your trusted partner in creating robust IT infrastructures and securing your premises with the latest technologies.
-                 Our certified professionals ensure seamless WiFi coverage, top-notch security, and reliable networking solutions.</p>
-          </div>
-          <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
-            <div class="grid grid-cols-1 gap-x-8 gap-y-6 text-base/7 font-semibold text-white sm:grid-cols-2 md:flex lg:gap-x-10">
-              <a href="#">Wi-Fi Installation <span aria-hidden="true">&rarr;</span></a>
-              <a href="#">CCTV Surveillance <span aria-hidden="true">&rarr;</span></a>
-              <a href="#">Access Control Systems <span aria-hidden="true">&rarr;</span></a>
-              <a href="#">Structured Cabling <span aria-hidden="true">&rarr;</span></a>
+            <div class="mx-auto max-w-2xl lg:mx-0">
+                <h2 class="font-heading text-5xl font-semibold tracking-tight text-white sm:text-7xl">About Wiredwise</h2>
+                <p class="mt-8 text-lg font-medium text-pretty text-white sm:text-xl/8">
+                    At **Wiredwise**, we're your dedicated technology partner based right here in **Thika, Kiambu County, Kenya**. We empower businesses like yours with **secure, scalable IT solutions** and **impactful digital presences**. From robust network infrastructure and intelligent security systems to modern web design and e-commerce platforms, we build the tech backbone your business needs to thrive and grow.
+                </p>
+                <p class="mt-4 text-lg font-medium text-pretty text-white sm:text-xl/8">
+                    Our certified professionals are committed to delivering reliable solutions and unparalleled support, ensuring your operations are seamless and your online presence shines.
+                </p>
             </div>
-            
-          </div>
+            <div class="mx-auto mt-10 max-w-2xl lg:mx-0 lg:max-w-none">
+                <div class="grid grid-cols-1 gap-x-8 gap-y-6 text-base/7 font-semibold text-white sm:grid-cols-2 md:flex lg:gap-x-10">
+                    <a href="#services">Business IT Solutions <span aria-hidden="true">&rarr;</span></a>
+                    <a href="#services">Web Design & Development <span aria-hidden="true">&rarr;</span></a>
+                    <a href="#contact">Get a Free Consultation <span aria-hidden="true">&rarr;</span></a>
+                </div>
+            </div>
         </div>
-      </div>
+    </div>
 </section>
 
 <!-- Complete Connectivity Solution -->
@@ -519,227 +575,238 @@
   <!-- Contact Form Section (to be added below) -->
   <div id="contact-form" class="hidden"></div>
 <!-- Portfolio Gallery Section -->
-<section id="Portfolio" class="py-20 px-6 md:px-20 bg-white">
+<section id="portfolio" class="py-20 px-6 md:px-20 bg-white">
     <div class="max-w-7xl mx-auto">
-      <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold mb-4 font-heading">Our Work</h2>
-        <p class="text-lg text-gray-600 max-w-3xl mx-auto">See our professional installations for homes and businesses</p>
-      </div>
-  
-      <!-- Filter Buttons -->
-      <div class="flex flex-wrap justify-center gap-3 mb-10">
-        <button class="filter-btn px-5 py-2 rounded-full bg-blue-700 text-white font-medium" data-filter="all">All Projects</button>
-        <button class="filter-btn px-5 py-2 rounded-full border border-gray-300 hover:bg-gray-100 font-medium" data-filter="wifi">WiFi Solutions</button>
-        <button class="filter-btn px-5 py-2 rounded-full border border-gray-300 hover:bg-gray-100 font-medium" data-filter="cabling">Structured Cabling</button>
-        <button class="filter-btn px-5 py-2 rounded-full border border-gray-300 hover:bg-gray-100 font-medium" data-filter="cctv">CCTV Installations</button>
-        <button class="filter-btn px-5 py-2 rounded-full border border-gray-300 hover:bg-gray-100 font-medium" data-filter="commercial">Commercial</button>
-        <button class="filter-btn px-5 py-2 rounded-full border border-gray-300 hover:bg-gray-100 font-medium" data-filter="residential">Residential</button>
-      </div>
-  
-      <!-- Masonry Grid -->
-      <div class="masonry-grid grid gap-6" style="grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))">
-        <!-- Item 1 -->
-        <div class="portfolio-item relative overflow-hidden rounded-xl shadow-lg group" data-category="wifi commercial">
-          <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df" alt="Office WiFi Installation" class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105">
-          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-            <h3 class="text-white text-xl font-bold mb-2 font-heading">Corporate Office WiFi</h3>
-            <p class="text-gray-200">Complete WiFi 6 deployment with seamless roaming across 5 floors</p>
-            <span class="mt-3 inline-block bg-blue-600 text-white text-sm px-3 py-1 rounded-full">Enterprise Solution</span>
-          </div>
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold mb-4 font-heading">Our Recent Work</h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto">Discover how Wiredwise empowers businesses and homes across Kenya with cutting-edge IT infrastructure and compelling digital presences.</p>
         </div>
-  
-        <!-- Item 2 -->
-        <div class="portfolio-item relative overflow-hidden rounded-xl shadow-lg group" data-category="cctv residential">
-          <img src="https://images.unsplash.com/photo-1600011689032-8b628b8a8747" alt="Home CCTV Installation" class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105">
-          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-            <h3 class="font-heading text-white text-xl font-bold mb-2">Smart Home Security</h3>
-            <p class="text-gray-200">4K CCTV system with remote monitoring and smart detection</p>
-            <span class="mt-3 inline-block bg-green-600 text-white text-sm px-3 py-1 rounded-full">Residential</span>
-          </div>
+
+        <div class="flex flex-wrap justify-center gap-3 mb-10">
+            <button class="filter-btn px-5 py-2 rounded-full bg-blue-700 text-white font-medium" data-filter="all">All Projects</button>
+            <button class="filter-btn px-5 py-2 rounded-full border border-gray-300 hover:bg-gray-100 font-medium" data-filter="it-solutions">IT Solutions</button>
+            <button class="filter-btn px-5 py-2 rounded-full border border-gray-300 hover:bg-gray-100 font-medium" data-filter="web-design">Web Design & Dev</button>
+            <button class="filter-btn px-5 py-2 rounded-full border border-gray-300 hover:bg-gray-100 font-medium" data-filter="cctv">CCTV</button>
+            <button class="filter-btn px-5 py-2 rounded-full border border-gray-300 hover:bg-gray-100 font-medium" data-filter="wifi">WiFi Networks</button>
+            <button class="filter-btn px-5 py-2 rounded-full border border-gray-300 hover:bg-gray-100 font-medium" data-filter="e-commerce">E-commerce</button>
+            <button class="filter-btn px-5 py-2 rounded-full border border-gray-300 hover:bg-gray-100 font-medium" data-filter="portfolio">Portfolios</button>
         </div>
-  
-        <!-- Item 3 -->
-        <div class="portfolio-item relative overflow-hidden rounded-xl shadow-lg group" data-category="cabling commercial">
-          <img src="https://images.unsplash.com/photo-1623718649591-311775a30c43" alt="Server Room Cabling" class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105">
-          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-            <h3 class="font-heading text-white text-xl font-bold mb-2">Data Center Cabling</h3>
-            <p class="text-gray-200">CAT6A structured cabling with professional cable management</p>
-            <span class="mt-3 inline-block bg-blue-600 text-white text-sm px-3 py-1 rounded-full">Enterprise Solution</span>
-          </div>
+
+        <div class="masonry-grid grid gap-6" style="grid-template-columns: repeat(auto-fill, minmax(300px, 1fr))">
+            <div class="portfolio-item relative overflow-hidden rounded-xl shadow-lg group" data-category="wifi it-solutions commercial">
+                <img src="https://images.unsplash.com/photo-1590658268037-6bf12165a8df" alt="Office WiFi Installation" class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <h3 class="text-white text-xl font-bold mb-2 font-heading">Corporate Office WiFi</h3>
+                    <p class="text-gray-200">Complete WiFi 6 deployment with seamless roaming across 5 floors.</p>
+                    <span class="mt-3 inline-block bg-blue-600 text-white text-sm px-3 py-1 rounded-full">Enterprise Solution</span>
+                </div>
+            </div>
+
+            <div class="portfolio-item relative overflow-hidden rounded-xl shadow-lg group" data-category="cctv it-solutions residential">
+                <img src="https://images.unsplash.com/photo-1600011689032-8b628b8a8747" alt="Home CCTV Installation" class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <h3 class="font-heading text-white text-xl font-bold mb-2">Smart Home Security</h3>
+                    <p class="text-gray-200">4K CCTV system with remote monitoring and smart detection.</p>
+                    <span class="mt-3 inline-block bg-green-600 text-white text-sm px-3 py-1 rounded-full">Residential</span>
+                </div>
+            </div>
+
+            <div class="portfolio-item relative overflow-hidden rounded-xl shadow-lg group" data-category="cabling it-solutions commercial">
+                <img src="https://images.unsplash.com/photo-1623718649591-311775a30c43" alt="Server Room Cabling" class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <h3 class="font-heading text-white text-xl font-bold mb-2">Data Center Cabling</h3>
+                    <p class="text-gray-200">CAT6A structured cabling with professional cable management.</p>
+                    <span class="mt-3 inline-block bg-blue-600 text-white text-sm px-3 py-1 rounded-full">Enterprise Solution</span>
+                </div>
+            </div>
+
+            <div class="portfolio-item relative overflow-hidden rounded-xl shadow-lg group" data-category="wifi it-solutions residential">
+                <img src="https://images.unsplash.com/photo-1621839673705-6617adf9e890" alt="Home WiFi Installation" class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <h3 class="font-heading text-white text-xl font-bold mb-2">Whole Home WiFi</h3>
+                    <p class="text-gray-200">Mesh WiFi system eliminating dead zones in 4,500 sq. ft home.</p>
+                    <span class="mt-3 inline-block bg-green-600 text-white text-sm px-3 py-1 rounded-full">Residential</span>
+                </div>
+            </div>
+
+            <div class="portfolio-item relative overflow-hidden rounded-xl shadow-lg group" data-category="cctv it-solutions commercial">
+                <img src="https://images.unsplash.com/photo-1566669437685-2c01fd6a99d0" alt="Retail CCTV Installation" class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <h3 class="font-heading text-white text-xl font-bold mb-2">Retail Surveillance</h3>
+                    <p class="text-gray-200">360° coverage with POS integration for loss prevention.</p>
+                    <span class="mt-3 inline-block bg-blue-600 text-white text-sm px-3 py-1 rounded-full">Commercial</span>
+                </div>
+            </div>
+
+            <div class="portfolio-item relative overflow-hidden rounded-xl shadow-lg group" data-category="wifi it-solutions commercial">
+                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71" alt="Warehouse WiFi" class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <h3 class="font-heading text-white text-xl font-bold mb-2">Warehouse WiFi</h3>
+                    <p class="text-gray-200">Industrial-grade access points covering 25,000 sq. ft facility.</p>
+                    <span class="mt-3 inline-block bg-blue-600 text-white text-sm px-3 py-1 rounded-full">Industrial</span>
+                </div>
+            </div>
+
+            <div class="portfolio-item relative overflow-hidden rounded-xl shadow-lg group" data-category="cabling it-solutions residential">
+                <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620" alt="Home Network Panel" class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <h3 class="font-heading text-white text-xl font-bold mb-2">Smart Home Cabling</h3>
+                    <p class="text-gray-200">Future-proof structured cabling for home automation.</p>
+                    <span class="mt-3 inline-block bg-green-600 text-white text-sm px-3 py-1 rounded-full">Residential</span>
+                </div>
+            </div>
+
+            <div class="portfolio-item relative overflow-hidden rounded-xl shadow-lg group" data-category="wifi it-solutions commercial">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c" alt="Conference Room AV" class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <h3 class="font-heading text-white text-xl font-bold mb-2">Conference Room AV</h3>
+                    <p class="text-gray-200">Integrated WiFi and AV system for hybrid meetings.</p>
+                    <span class="mt-3 inline-block bg-blue-600 text-white text-sm px-3 py-1 rounded-full">Commercial</span>
+                </div>
+            </div>
+
+            <div class="portfolio-item relative overflow-hidden rounded-xl shadow-lg group" data-category="web-design e-commerce commercial">
+                <img src="https://images.unsplash.com/photo-1556740738-b6479b1836a9" alt="E-commerce Website for Fashion Brand" class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <h3 class="font-heading text-white text-xl font-bold mb-2">Trendy Online Fashion Store</h3>
+                    <p class="text-gray-200">Custom e-commerce platform with secure payment gateway and intuitive UX.</p>
+                    <span class="mt-3 inline-block bg-purple-600 text-white text-sm px-3 py-1 rounded-full">E-commerce</span>
+                </div>
+            </div>
+
+            <div class="portfolio-item relative overflow-hidden rounded-xl shadow-lg group" data-category="web-design commercial">
+                <img src="https://images.unsplash.com/photo-1507238691740-ad9c31a78734" alt="Corporate Website Redesign" class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <h3 class="font-heading text-white text-xl font-bold mb-2">Modern Corporate Redesign</h3>
+                    <p class="text-gray-200">Revamped website with improved navigation and content management system.</p>
+                    <span class="mt-3 inline-block bg-blue-600 text-white text-sm px-3 py-1 rounded-full">Web Redesign</span>
+                </div>
+            </div>
+
+            <div class="portfolio-item relative overflow-hidden rounded-xl shadow-lg group" data-category="web-design portfolio">
+                <img src="https://images.unsplash.com/photo-1549692520-acc666928e21" alt="Professional Portfolio Website" class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
+                    <h3 class="font-heading text-white text-xl font-bold mb-2">Creative Photographer Portfolio</h3>
+                    <p class="text-gray-200">Dynamic online portfolio to showcase high-resolution imagery and client testimonials.</p>
+                    <span class="mt-3 inline-block bg-yellow-600 text-white text-sm px-3 py-1 rounded-full">Portfolio Site</span>
+                </div>
+            </div>
+
         </div>
-  
-        <!-- Item 4 -->
-        <div class="portfolio-item relative overflow-hidden rounded-xl shadow-lg group" data-category="wifi residential">
-          <img src="https://images.unsplash.com/photo-1621839673705-6617adf9e890" alt="Home WiFi Installation" class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105">
-          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-            <h3 class="font-heading text-white text-xl font-bold mb-2">Whole Home WiFi</h3>
-            <p class="text-gray-200">Mesh WiFi system eliminating dead zones in 4,500 sq. ft home</p>
-            <span class="mt-3 inline-block bg-green-600 text-white text-sm px-3 py-1 rounded-full">Residential</span>
-          </div>
+
+        <div class="text-center mt-12">
+            <button class="px-8 py-3 bg-blue-700 hover:bg-blue-600 text-white font-semibold rounded-lg shadow-md transition">
+                View More Projects
+            </button>
         </div>
-  
-        <!-- Item 5 -->
-        <div class="portfolio-item relative overflow-hidden rounded-xl shadow-lg group" data-category="cctv commercial">
-          <img src="https://images.unsplash.com/photo-1566669437685-2c01fd6a99d0" alt="Retail CCTV Installation" class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105">
-          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-            <h3 class="font-heading text-white text-xl font-bold mb-2">Retail Surveillance</h3>
-            <p class="text-gray-200">360° coverage with POS integration for loss prevention</p>
-            <span class="mt-3 inline-block bg-blue-600 text-white text-sm px-3 py-1 rounded-full">Commercial</span>
-          </div>
-        </div>
-  
-        <!-- Item 6 -->
-        <div class="portfolio-item relative overflow-hidden rounded-xl shadow-lg group" data-category="wifi commercial">
-          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71" alt="Warehouse WiFi" class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105">
-          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-            <h3 class="font-heading text-white text-xl font-bold mb-2">Warehouse WiFi</h3>
-            <p class="text-gray-200">Industrial-grade access points covering 25,000 sq. ft facility</p>
-            <span class="mt-3 inline-block bg-blue-600 text-white text-sm px-3 py-1 rounded-full">Industrial</span>
-          </div>
-        </div>
-  
-        <!-- Item 7 -->
-        <div class="portfolio-item relative overflow-hidden rounded-xl shadow-lg group" data-category="cabling residential">
-          <img src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620" alt="Home Network Panel" class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105">
-          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-            <h3 class="font-heading text-white text-xl font-bold mb-2">Smart Home Cabling</h3>
-            <p class="text-gray-200">Future-proof structured cabling for home automation</p>
-            <span class="mt-3 inline-block bg-green-600 text-white text-sm px-3 py-1 rounded-full">Residential</span>
-          </div>
-        </div>
-  
-        <!-- Item 8 -->
-        <div class="portfolio-item relative overflow-hidden rounded-xl shadow-lg group" data-category="wifi commercial">
-          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c" alt="Conference Room AV" class="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105">
-          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-6">
-            <h3 class="font-heading text-white text-xl font-bold mb-2">Conference Room AV</h3>
-            <p class="text-gray-200">Integrated WiFi and AV system for hybrid meetings</p>
-            <span class="mt-3 inline-block bg-blue-600 text-white text-sm px-3 py-1 rounded-full">Commercial</span>
-          </div>
-        </div>
-      </div>
-  
-      <div class="text-center mt-12">
-        <button class="px-8 py-3 bg-blue-700 hover:bg-blue-600 text-white font-semibold rounded-lg shadow-md transition">
-          View More Projects
-        </button>
-      </div>
     </div>
-  </section>
+</section>
   <!-- FAQ Section with Expand/Collapse -->
 <section id="faq" class="py-16 px-6 md:px-20" x-data="{ selected: null }">
     <div class="max-w-5xl mx-auto">
-      <h2 class="font-heading text-3xl md:text-4xl font-bold text-gray-900 mb-10 text-center">Frequently Asked Questions</h2>
-  
-      <div class="space-y-4">
-        
-        <!-- FAQ Item -->
-        <div class=" border rounded overflow-hidden">
-          <button @click="selected !== 1 ? selected = 1 : selected = null" class="w-full flex justify-between items-center p-6 text-left">
-            <span class="text-lg md:text-xl font-semibold text-gray-800">How many cameras do I need?</span>
-            <svg :class="selected === 1 ? 'transform rotate-180' : ''" class="w-6 h-6 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
-          <div x-show="selected === 1" x-collapse class="px-6 pb-6 text-gray-600">
-            The number of cameras depends on the size of the area you want to monitor and your security goals. We can help you design a setup that's right for you!
-          </div>
+        <h2 class="font-heading text-3xl md:text-4xl font-bold text-gray-900 mb-10 text-center">Frequently Asked Questions</h2>
+
+        <div class="space-y-4">
+
+            <div class="border rounded overflow-hidden">
+                <button @click="selected !== 1 ? selected = 1 : selected = null" class="w-full flex justify-between items-center p-6 text-left">
+                    <span class="text-lg md:text-xl font-semibold text-gray-800">Do you offer site visits or consultations?</span>
+                    <svg :class="selected === 1 ? 'transform rotate-180' : ''" class="w-6 h-6 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <div x-show="selected === 1" x-collapse class="px-6 pb-6 text-gray-600">
+                    Yes, we offer professional site visits and consultations for both our IT and web design services. **Please note that a nominal fee applies for all on-site visits to cover assessment and travel costs within Thika and surrounding areas.** This ensures we provide the most accurate solutions tailored to your specific needs.
+                </div>
+            </div>
+
+            <div class="border rounded overflow-hidden">
+                <button @click="selected !== 2 ? selected = 2 : selected = null" class="w-full flex justify-between items-center p-6 text-left">
+                    <span class="text-lg md:text-xl font-semibold text-gray-800">How do I know what IT solution is right for my business?</span>
+                    <svg :class="selected === 2 ? 'transform rotate-180' : ''" class="w-6 h-6 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <div x-show="selected === 2" x-collapse class="px-6 pb-6 text-gray-600">
+                    We start with a thorough **needs assessment**. Our experts will analyze your current setup, discuss your goals, and recommend a tailored solution (WiFi, CCTV, Access Control, Cabling, Telephony) that perfectly fits your requirements and budget.
+                </div>
+            </div>
+
+            <div class="border rounded overflow-hidden">
+                <button @click="selected !== 3 ? selected = 3 : selected = null" class="w-full flex justify-between items-center p-6 text-left">
+                    <span class="text-lg md:text-xl font-semibold text-gray-800">What's the typical installation time for IT systems?</span>
+                    <svg :class="selected === 3 ? 'transform rotate-180' : ''" class="w-6 h-6 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <div x-show="selected === 3" x-collapse class="px-6 pb-6 text-gray-600">
+                    Installation time varies based on the complexity and scale of the project. A standard WiFi or CCTV setup might take a day or two, while larger structured cabling or integrated systems could take longer. We'll provide a clear timeline after our assessment.
+                </div>
+            </div>
+
+            <div class="border rounded overflow-hidden">
+                <button @click="selected !== 4 ? selected = 4 : selected = null" class="w-full flex justify-between items-center p-6 text-left">
+                    <span class="text-lg md:text-xl font-semibold text-gray-800">Do you offer ongoing maintenance for IT solutions?</span>
+                    <svg :class="selected === 4 ? 'transform rotate-180' : ''" class="w-6 h-6 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <div x-show="selected === 4" x-collapse class="px-6 pb-6 text-gray-600">
+                    Yes, we provide comprehensive **maintenance and support packages** for all our IT installations. This ensures your systems remain optimized, secure, and operational with minimal downtime.
+                </div>
+            </div>
+
+            <div class="border rounded overflow-hidden">
+                <button @click="selected !== 5 ? selected = 5 : selected = null" class="w-full flex justify-between items-center p-6 text-left">
+                    <span class="text-lg md:text-xl font-semibold text-gray-800">How long does it take to build a website?</span>
+                    <svg :class="selected === 5 ? 'transform rotate-180' : ''" class="w-6 h-6 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <div x-show="selected === 5" x-collapse class="px-6 pb-6 text-gray-600">
+                    The timeline for website development varies depending on its complexity, features, and content readiness. A basic business site might take **3-5 weeks**, while a complex e-commerce platform could take **8-12 weeks or more**. We'll provide a detailed timeline during your project consultation.
+                </div>
+            </div>
+
+            <div class="border rounded overflow-hidden">
+                <button @click="selected !== 6 ? selected = 6 : selected = null" class="w-full flex justify-between items-center p-6 text-left">
+                    <span class="text-lg md:text-xl font-semibold text-gray-800">What's the process for web design projects?</span>
+                    <svg :class="selected === 6 ? 'transform rotate-180' : ''" class="w-6 h-6 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <div x-show="selected === 6" x-collapse class="px-6 pb-6 text-gray-600">
+                    Our process typically involves: **Discovery & Planning** (understanding your needs), **Design** (wireframes, mockups), **Development** (coding, functionality), **Testing & Launch**, and **Ongoing Support**. We keep you involved every step of the way!
+                </div>
+            </div>
+
+            <div class="border rounded overflow-hidden">
+                <button @click="selected !== 7 ? selected = 7 : selected = null" class="w-full flex justify-between items-center p-6 text-left">
+                    <span class="text-lg md:text-xl font-semibold text-gray-800">Do you provide website maintenance after launch?</span>
+                    <svg :class="selected === 7 ? 'transform rotate-180' : ''" class="w-6 h-6 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <div x-show="selected === 7" x-collapse class="px-6 pb-6 text-gray-600">
+                    Absolutely! We offer various **website maintenance packages** to keep your site secure, updated, backed up, and running smoothly. This includes software updates, security monitoring, performance optimization, and content adjustments.
+                </div>
+            </div>
+
+            <div class="border rounded overflow-hidden">
+                <button @click="selected !== 8 ? selected = 8 : selected = null" class="w-full flex justify-between items-center p-6 text-left">
+                    <span class="text-lg md:text-xl font-semibold text-gray-800">Can you integrate M-Pesa or other local payment gateways into my online shop?</span>
+                    <svg :class="selected === 8 ? 'transform rotate-180' : ''" class="w-6 h-6 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <div x-show="selected === 8" x-collapse class="px-6 pb-6 text-gray-600">
+                    Yes, we specialize in integrating popular Kenyan payment gateways like **M-Pesa**, along with credit/debit card options, into your e-commerce platform. This provides a seamless and secure checkout experience for your customers.
+                </div>
+            </div>
+
         </div>
-  
-        <!-- FAQ Item -->
-        <div class="border rounded overflow-hidden">
-          <button @click="selected !== 2 ? selected = 2 : selected = null" class="w-full flex justify-between items-center p-6 text-left">
-            <span class="text-lg md:text-xl font-semibold text-gray-800">How do I set up and configure my AP?</span>
-            <svg :class="selected === 2 ? 'transform rotate-180' : ''" class="w-6 h-6 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
-          <div x-show="selected === 2" x-collapse class="px-6 pb-6 text-gray-600">
-            Setting up your AP is easy using our mobile app or web portal. We provide full setup guides and offer expert support if needed.
-          </div>
-        </div>
-  
-        <!-- FAQ Item -->
-        <div class="border rounded overflow-hidden">
-          <button @click="selected !== 3 ? selected = 3 : selected = null" class="w-full flex justify-between items-center p-6 text-left">
-            <span class="text-lg md:text-xl font-semibold text-gray-800">Which AP is right for me?</span>
-            <svg :class="selected === 3 ? 'transform rotate-180' : ''" class="w-6 h-6 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
-          <div x-show="selected === 3" x-collapse class="px-6 pb-6 text-gray-600">
-            Choosing the right AP depends on coverage area, number of users, and performance needs. Our team can guide you to the perfect match.
-          </div>
-        </div>
-  
-        <!-- FAQ Item -->
-        <div class="border rounded-lg overflow-hidden">
-          <button @click="selected !== 4 ? selected = 4 : selected = null" class="w-full flex justify-between items-center p-6 text-left">
-            <span class="text-lg md:text-xl font-semibold text-gray-800">How many APs do I need?</span>
-            <svg :class="selected === 4 ? 'transform rotate-180' : ''" class="w-6 h-6 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
-          <div x-show="selected === 4" x-collapse class="px-6 pb-6 text-gray-600">
-            This depends on your building layout, wall materials, and user density. We offer professional assessments to help you plan properly.
-          </div>
-        </div>
-  
-        <!-- FAQ Item -->
-        <div class="border rounded overflow-hidden">
-          <button @click="selected !== 5 ? selected = 5 : selected = null" class="w-full flex justify-between items-center p-6 text-left">
-            <span class="text-lg md:text-xl font-semibold text-gray-800">How do I power my APs?</span>
-            <svg :class="selected === 5 ? 'transform rotate-180' : ''" class="w-6 h-6 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
-          <div x-show="selected === 5" x-collapse class="px-6 pb-6 text-gray-600">
-            Our APs are powered using Power over Ethernet (PoE), making installation clean and efficient without extra cables.
-          </div>
-        </div>
-  
-        <!-- FAQ Item -->
-        <div class="border rounded overflow-hidden">
-          <button @click="selected !== 6 ? selected = 6 : selected = null" class="w-full flex justify-between items-center p-6 text-left">
-            <span class="text-lg md:text-xl font-semibold text-gray-800">Can I wirelessly mesh my APs together?</span>
-            <svg :class="selected === 6 ? 'transform rotate-180' : ''" class="w-6 h-6 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
-          <div x-show="selected === 6" x-collapse class="px-6 pb-6 text-gray-600">
-            Yes, our APs fully support wireless mesh networking for seamless coverage extension.
-          </div>
-        </div>
-  
-        <!-- FAQ Item -->
-        <div class="border rounded overflow-hidden">
-          <button @click="selected !== 7 ? selected = 7 : selected = null" class="w-full flex justify-between items-center p-6 text-left">
-            <span class="text-lg md:text-xl font-semibold text-gray-800">Are there any fees or licensing requirements?</span>
-            <svg :class="selected === 7 ? 'transform rotate-180' : ''" class="w-6 h-6 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
-          <div x-show="selected === 7" x-collapse class="px-6 pb-6 text-gray-600">
-            No hidden fees, no mandatory licenses. You get all the features at no extra cost.
-          </div>
-        </div>
-  
-        <!-- FAQ Item -->
-        <div class="border rounded overflow-hidden">
-          <button @click="selected !== 8 ? selected = 8 : selected = null" class="w-full flex justify-between items-center p-6 text-left">
-            <span class="text-lg md:text-xl font-semibold text-gray-800">How can I optimize my wireless speeds?</span>
-            <svg :class="selected === 8 ? 'transform rotate-180' : ''" class="w-6 h-6 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </button>
-          <div x-show="selected === 8" x-collapse class="px-6 pb-6 text-gray-600">
-            For the best speeds, place APs in open areas, minimize walls between them, and always use the latest hardware and firmware updates.
-          </div>
-        </div>
-  
-      </div>
     </div>
-  </section>
+</section>
   
   <!-- Alpine.js (required for expand/collapse) -->
   <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
